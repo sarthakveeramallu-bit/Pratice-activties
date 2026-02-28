@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2>Shopping Cart</h2>
+        <p id="result"></p>
+
+        <script>
+            var cart ={
+                items: [
+                    {name: "Laptop", price: 50000},
+                    {name: "Mouse", price: 1000},
+                    {name: "Keyboard", price: 2000}
+                ],
+                getTotal: function() {
+                    var total = 0;
+                    for(var i = 0; i < this.items.length; i++) {
+                        total += this.items[i].price;
+                    }
+                    return total;
+                }
+            };
+            document.getElementById("result").innerHTML = "Total Price: " + cart.getTotal();
+        </script>
+    </body>
+</html>
