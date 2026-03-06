@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2>Temperature Average</h2>
+        <p id="demo"></p>
+
+        <script>
+            function addTemp(a, b) {
+                return a + b;
+            }
+            function avearage(a, b) {
+                return addTemp(a, b) / 2;
+            }
+            let result = avearage(32, 28);
+            document.getElementById("demo").innerHTML = "Average Temperature: " + result+ "°C";
+
+        </script>
+        
+    </body>
+</html>
